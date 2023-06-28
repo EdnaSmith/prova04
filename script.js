@@ -7,8 +7,13 @@ function calcularPeso() {
     var imc = peso / (altura * altura)
     var msg = getMsg(imc, sexo);
 
+    if(idade< 60){
+        document.getElementById("resultado").textContent = "Calcula apenas para pessoas com idedade mais que 60 anos"
+    } else {
+        resutado(nome, idade, imc, msg);
+    }
 
-    resutado(nome, idade, imc, msg);
+
 
 }
 
